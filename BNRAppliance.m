@@ -12,28 +12,31 @@
 
 - (instancetype)init
 {
-  // call super's init
-  self = [super init];
-  
-  if (self) // made an instance, set the voltage to 120
+  // call super's init to get basic instance
+  if (self = [super init]) // made an instance, set the voltage to 120
   {
+    _productName = @"Unknown Product";
     _voltage = 120;
   }
+  
   return self;
 } // init
 
-- (instancetype)initWithProductName:(NSString *)pn
+- (instancetype)initWithProductName:(NSString *)prodName
 {
-  self = [super init];
-  
-  if (self)
+  // call super's init to get basic instance
+  if (self = [super init]) // made an instance, set the voltage to 120
   {
-    _productName = [pn copy];
-    _voltage = 120;
+    [self setProductName:prodName];
+    [self setVoltage:120];
   }
   
   return self;
-  
 } // initWithProductName()
+
+- (NSString *)description
+{
+  return [NSString stringWithFormat:@"<%@: %d volts>", self.productName, self.voltage];
+} // description
 
 @end
