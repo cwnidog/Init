@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5DEF252B1B8E6DE600447465 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEF252A1B8E6DE600447465 /* main.m */; };
 		5DEF25331B8E6E5800447465 /* BNRAppliance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEF25321B8E6E5800447465 /* BNRAppliance.m */; };
+		5DEF25391B8E77CA00447465 /* BNROwnedAppliance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEF25381B8E77CA00447465 /* BNROwnedAppliance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +27,10 @@
 /* Begin PBXFileReference section */
 		5DEF25271B8E6DE600447465 /* Appliances */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Appliances; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DEF252A1B8E6DE600447465 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5DEF25311B8E6E5800447465 /* BNRAppliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRAppliance.h; sourceTree = "<group>"; };
-		5DEF25321B8E6E5800447465 /* BNRAppliance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRAppliance.m; sourceTree = "<group>"; };
+		5DEF25311B8E6E5800447465 /* BNRAppliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRAppliance.h; path = ../BNRAppliance.h; sourceTree = "<group>"; };
+		5DEF25321B8E6E5800447465 /* BNRAppliance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRAppliance.m; path = ../BNRAppliance.m; sourceTree = "<group>"; };
+		5DEF25371B8E77CA00447465 /* BNROwnedAppliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNROwnedAppliance.h; sourceTree = "<group>"; };
+		5DEF25381B8E77CA00447465 /* BNROwnedAppliance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNROwnedAppliance.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +47,6 @@
 		5DEF251E1B8E6DE600447465 = {
 			isa = PBXGroup;
 			children = (
-				5DEF25311B8E6E5800447465 /* BNRAppliance.h */,
-				5DEF25321B8E6E5800447465 /* BNRAppliance.m */,
 				5DEF25291B8E6DE600447465 /* Appliances */,
 				5DEF25281B8E6DE600447465 /* Products */,
 			);
@@ -62,7 +63,11 @@
 		5DEF25291B8E6DE600447465 /* Appliances */ = {
 			isa = PBXGroup;
 			children = (
+				5DEF25311B8E6E5800447465 /* BNRAppliance.h */,
+				5DEF25321B8E6E5800447465 /* BNRAppliance.m */,
 				5DEF252A1B8E6DE600447465 /* main.m */,
+				5DEF25371B8E77CA00447465 /* BNROwnedAppliance.h */,
+				5DEF25381B8E77CA00447465 /* BNROwnedAppliance.m */,
 			);
 			path = Appliances;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DEF25331B8E6E5800447465 /* BNRAppliance.m in Sources */,
+				5DEF25391B8E77CA00447465 /* BNROwnedAppliance.m in Sources */,
 				5DEF252B1B8E6DE600447465 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
