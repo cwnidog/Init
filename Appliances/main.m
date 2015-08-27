@@ -19,11 +19,13 @@ int main(int argc, const char *argv[])
     NSLog(@"a is %@", a);
     
     // give it some non-default values
-    [a setProductName:@"Washing Machine"];
-    [a setVoltage:240];
+    [a setValue:@"Washing Machine" forKey:@"productName"];
+//    [a setVoltage:240];
+    [a setValue:[NSNumber numberWithInt:240] forKey:@"voltage"];
     
     // display the changes
     NSLog(@"a is %@", a);
+    NSLog(@"The product name is %@", [a valueForKey:@"productName"]);
     
     // create an owned appliance
     BNROwnedAppliance *ownedApp = [[BNROwnedAppliance alloc] initWithProductName:@"Fan" firstOwnerName:@"Errol Flynn"];
